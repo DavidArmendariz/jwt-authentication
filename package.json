@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "dev:posts": "nodemon src/server.js",
-    "dev:auth": "nodemon src/authServer.js"
+    "dev:posts": "nodemon -r esm src/server.js",
+    "dev:auth": "nodemon -r esm src/authServer.js"
   },
   "keywords": [],
   "author": "David Armendariz",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1"
   },
