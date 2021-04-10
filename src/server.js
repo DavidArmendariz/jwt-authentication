@@ -1,8 +1,5 @@
 import express from 'express';
-import { config } from 'dotenv';
-import authenticateToken from './authenticatToken';
-
-config();
+import authenticateToken from './authenticateToken';
 
 const app = express();
 app.use(express.json());
