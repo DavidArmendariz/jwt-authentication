@@ -34,4 +34,9 @@ app.post('/login', (req, res) => {
   res.json({ accessToken, refreshToken });
 });
 
+app.delete('/logout', (req, res) => {
+  refreshTokens = refreshTokens.filter((token) => token !== req.body.token);
+  res.sendStatus(204);
+});
+
 app.listen(4000);

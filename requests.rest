@@ -6,7 +6,7 @@ POST http://localhost:4000/token
 Content-Type: application/json
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGF2aWQiLCJpYXQiOjE2MTgwODY1MDR9.qbzFGwsNi4BIkijKC9TDW4aNxCdkuzdSWjfHDWL8Cb4"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGF2aWQiLCJpYXQiOjE2MTgwODY3MTZ9.1mtfOqgp7vbbdyHvV0WNkpPtsPjdgfabWxWkI_iU9qA"
 }
 
 ###
@@ -15,4 +15,12 @@ Content-Type: application/json
 
 {
     "username": "David"
+}
+
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGF2aWQiLCJpYXQiOjE2MTgwODY3MTZ9.1mtfOqgp7vbbdyHvV0WNkpPtsPjdgfabWxWkI_iU9qA"
 }
